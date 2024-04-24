@@ -831,12 +831,6 @@ require('lazy').setup({
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
   },
-  {
-    "karb94/neoscroll.nvim",
-    config = function ()
-      require('neoscroll').setup {}
-    end
-  },
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
