@@ -10,3 +10,20 @@ lspconfig.intelephense.setup({
     },
   },
 })
+lspconfig.pyright.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "python" },
+  cmd = {
+    "/home/linuxbrew/.linuxbrew/bin/pyright-langserver",
+    "/home/linuxbrew/.linuxbrew/bin/pyright-langserver",
+    "--stdio",
+  },
+  settings = {
+    python = {
+      analysis = {
+        extraPaths = { "/home/linuxbrew/.linuxbrew/Cellar/python@3.12/3.12.3/lib/python3.12/site-packages" },
+      },
+    },
+  },
+})
